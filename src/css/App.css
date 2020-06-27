@@ -1,0 +1,122 @@
+div {
+  transition: 1s;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.list_button_box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_button {
+  outline: none;
+  background: none;
+  border: none;
+  width: 10vw;
+  height: 10vw;
+  border-top: 3px solid black;
+}
+
+.list_left_button {
+  border-left: 3px solid black;
+  transform: rotate(-45deg);
+}
+
+.list_left_button_disable {
+  border-top: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+  transform: rotate(-45deg);
+}
+
+.list_right_button {
+  border-right: 3px solid black;
+  transform: rotate(45deg);
+}
+
+.list_right_button_disable {
+  border-top: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  transform: rotate(45deg);
+}
+
+.photo_list_box {
+  flex: 3;
+  display: flex;
+  /* height: 33.33vw; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.list_box {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 16.66vw;
+}
+
+.list_background {
+  display: block;
+  position: absolute;
+}
+
+.list_photo {
+  width: 33.33vw;
+  height: 16.66vw;
+  border-radius: 5px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, .4); */
+  /* background-size: contain; */
+  background-color: white;
+}
+
+.list_big {
+  transform: scale(1.2);
+}
+
+.photo_list_nav {
+  display: flex;
+  position: absolute;
+  bottom: 1vw;
+}
+
+.click_list_box {
+  display: block;
+  margin: 0 10px;
+  padding: 2px 15px;
+  border-radius: 3px;
+  background: #ff9abf;
+}
+
+.click_list_box_active {
+  background: #ce2664;
+  transition: .5s;
+}
+
+.image_style {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}

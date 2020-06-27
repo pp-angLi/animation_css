@@ -1,0 +1,47 @@
+.list_big_text {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.list_list_big_animation_list_style {}
+
+.list_big_animation {
+  animation: hahah 1s forwards;
+}
+
+.list_big_animation_right {
+  animation: hahahRight 1s forwards;
+}
+
+@keyframes hahah {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(.7) translate(-25%, -125%);
+    opacity: .75;
+  }
+
+  100% {
+    transform: scale(.4) translate(-200%, 250%);
+    opacity: 0;
+
+  }
+}
+
+@keyframes hahahRight {
+  from {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(.7) translate(25%, -125%);
+    opacity: .75;
+  }
+
+  to {
+    transform: scale(.4) translate(200%, 250%);
+    opacity: 0;
+
+  }
+}
